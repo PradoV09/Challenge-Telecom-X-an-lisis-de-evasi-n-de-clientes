@@ -115,8 +115,8 @@ El análisis sigue el enfoque **ETL** (Extract, Transform, Load):
 
 ## 👤 Autor
 
-Challenge Telecom X - Análisis de Evasión de Clientes
+Jose Luis Prado Valencia
 
 ---
 
-**Última actualización**: Febrero 2026
+**Última actualización**: 10 de Febrero de 2026
