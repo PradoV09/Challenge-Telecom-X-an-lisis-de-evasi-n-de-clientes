@@ -90,14 +90,53 @@ El análisis sigue el enfoque **ETL** (Extract, Transform, Load):
    - Exploración de inconsistencias en categorías
 3. **Load**: Preparación de datos listos para análisis y modelado
 
+## � Contenido del Notebook
+
+### Sección 1: Extracción (Extract)
+
+- Importación de datos desde `json/TelecomX_Data.json`
+- Visualización de estructura inicial
+- Obtención de dimensiones del dataset
+
+### Sección 2: Transformación (Transform)
+
+- **Normalización de estructuras anidadas:**
+  - `customer_df`: Datos demográficos
+  - `phone_df`: Servicios telefónicos
+  - `internet_df`: Servicios de internet
+  - `account_df`: Información de cuenta
+- **Creación de DataFrame unificado** (`df_flat`)
+- **Selección de columnas relevantes:** 15 variables clave para análisis
+- **Conversión de tipos de datos:** Cargos convertidos a float64
+
+### Sección 3: Validación y Limpieza de Datos
+
+- Verificación de valores nulos (`isnull()`, `isna()`)
+- Rellenado de valores faltantes
+- Identificación y conteo de registros duplicados
+- Normalización de nombres de columnas (minúsculas y reemplazar puntos)
+
+### Sección 4: Análisis Descriptivo
+
+- Cálculo de estadísticas descriptivas
+- Visualizaciones gráficas de distribuciones
+- Análisis de métricas clave (`media`, `percentiles`, etc.)
+- Exploración de patrones en variables de churn
+
 ## 🔧 Estado del Proyecto
 
 - ✅ Carga e importación de datos
 - ✅ Normalización de estructuras JSON
 - ✅ Exploración inicial de variables
-- ✅ Identificación de incoherencias
-- 🔄 **En progreso**: Análisis exploratorio detallado (EDA)
-- ⏳ Próximo: Visualizaciones y gráficos
+- ✅ Identificación de incoherencias (valores nulos y duplicados)
+- ✅ Limpieza y transformación de datos
+- ✅ Conversión de tipos de datos (cargos a float)
+- ✅ Normalización de nombres de columnas
+- ✅ Análisis descriptivo básico con estadísticas
+- ✅ Visualizaciones gráficas (gráficos estadísticos)
+- ✅ Cálculos de métricas (media, percentiles, distribuciones)
+- 🔄 **En progreso**: Análisis exploratorio avanzado (EDA detallado)
+- ⏳ Próximo: Análisis de correlaciones, segmentación y patrones de churn
 - ⏳ Próximo: Análisis de correlaciones
 - ⏳ Próximo: Modelado predictivo
 
@@ -119,4 +158,4 @@ Jose Luis Prado Valencia
 
 ---
 
-**Última actualización**: 10 de Febrero de 2026
+**Última actualización**: 12 de Febrero de 2026
